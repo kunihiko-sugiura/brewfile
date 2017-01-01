@@ -27,6 +27,7 @@ cask sourcetree
 cask kitematic 
 cask blisk
 cask github-desktop
+cask keeweb
 
 # App Store applications
 appstore Yummy FTP
