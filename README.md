@@ -1,5 +1,10 @@
 # brewfile
 
-Package list for [homebrew](http://brew.sh/).
+## exec command
 
-Managed by [homebrew-file](https://github.com/rcmdnk/homebrew-file).
+``` sh
+xcode-select --install
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew upgrade
+brew install rcmdnk/file/brew-file
+```
