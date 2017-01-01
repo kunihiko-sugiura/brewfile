@@ -5,8 +5,8 @@ tap caskroom/cask
 tap homebrew/core
 
 # Install formulae
-brew brew-cask
 brew git
+brew hub
 brew node
 brew yarn
 
@@ -26,6 +26,7 @@ cask dropbox
 cask sourcetree 
 cask kitematic 
 cask blisk
+cask github-desktop
 
 # App Store applications
 appstore Yummy FTP
