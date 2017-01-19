@@ -15,6 +15,7 @@ brew yarn
 brew openssl
 brew homebrew/apache/httpd22
 brew mysql
+brew mongo
 
 # php
 brew homebrew/php/php56 --homebrew-apxs --with-httpd22
@@ -46,3 +47,6 @@ cask google-japanese-ime
 cask cmd-eikana
 cask hosts
 cask boostnote
+cask libreoffice
+cask flux
+cask filezilla
