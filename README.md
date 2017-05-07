@@ -16,6 +16,16 @@ brew upgrade
 brew install rcmdnk/file/brew-file
 
 
+brew install --disable-etcdir zsh
+sudo echo /usr/local/bin/zsh >> /etc/shells
+
+
+
+
+
+
+
+
 
 
 
@@ -27,6 +37,42 @@ brew file install
 # update
 brew file cask_upgrade -C
 ```
+
+
+keg-onlyなパッケージでシンボリックリンクが作成されていないもの
+リスト表示
+brew info --json=v1 --installed | jq "map(select(.keg_only == true and .linked_keg == null) | .name)"
+
+リンクを手動で実行
+brew link packagename --force
+
+brew link zlib --force
+
+
+## phpenv install
+マシン全体と各ディレクトリ毎のPHPバージョンを管理するためのツール。
+
+```#!/usr/bin/env bash
+curl -L https://raw.github.com/CHH/phpenv/master/bin/phpenv-install.sh | bash
+echo 'eval "$(phpenv init -)"' >> ~/.bash_profile
+source .bash_profile
+```
+
+## php-build install
+複数バージョンのPHPをインストールするためのツール。
+
+```#!/usr/bin/env bash
+git clone git://github.com/CHH/php-build.git $HOME/.phpenv/plugins/php-build
+```
+
+## phpenv setting
+
+```#!/usr/bin/env bash
+
+phpenv install -l
+
+
+
 
 
 ## sublime text
