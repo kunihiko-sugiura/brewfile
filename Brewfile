@@ -37,6 +37,13 @@ brew autoconf
 brew automake
 brew putty
 brew watchman
+brew httpie
+brew git-ftp
+# 負荷テスト
+brew siege
+# graphic系ライブラリ
+brew graphviz
+brew blueutil
 
 # php
 #brew homebrew/php/php56 --homebrew-apxs --with-httpd22
@@ -45,13 +52,12 @@ brew watchman
 brew homebrew/php/composer
 brew phpmyadmin
 brew homebrew/versions/bison27
+brew homebrew/php/wp-cli
 #brew link homebrew/versions/bison27 --force
 
 ## Install Cask formulae
 cask 0xed
 cask iterm2
-cask google-chrome
-cask firefox
 cask phpstorm
 cask visual-studio
 cask visual-studio-code
@@ -77,3 +83,17 @@ cask dash
 cask skype
 cask skypewebplugin
 cask virtualbox
+cask poedit
+cask alfred
+cask vagrant
+cask vagrant-manager
+cask db-browser-for-sqlite
+cask duet
+cask sequel-pro
+# browser
+cask google-chrome
+cask firefox
+brew cask torbrowser
+brew cask brave
+
+
